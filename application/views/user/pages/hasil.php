@@ -7,9 +7,18 @@ background-position: center;
 </div>
 </div>
 </body> 
-
-<CENTER><div class="col-md-12 text-white">
-	<table class="table" width="100%">
+<style type="text/css">
+.table{
+	background-color: #ffffff;
+	color : #000000;
+	font-size: 20px;
+}
+.p-black {
+	color: #000000;
+}
+</style>
+<CENTER><div class="col-md-12 ">
+	<table class="table" width="100%"  >
 	<center>
 	<h4>HASIL ANALISIS</h4>
 	</center>
@@ -19,7 +28,7 @@ background-position: center;
 					echo form_open(base_url('user/hasil')); 
 					?>
 
-		<tr> 
+		<tr > 
 			<td>Tanggal Konsultasi</td>
 			<td>:</td>
 			<td><?php
@@ -48,7 +57,7 @@ background-position: center;
 				echo tgl_indo(date('Y-m-d'));  ?></td>
 		</tr>
 
-		<tr>
+		<tr >
 			<td>Username</td>
 			<td>:</td>
 			<td><?php echo $username ?></td>
@@ -64,12 +73,12 @@ background-position: center;
 		<tr>
 			<td>Solusi</td>
 			<td>:</td>
-			<td><p>
+			<td>
 				<?php $no=1; foreach ($solusi as $s) {?>
 					<?php echo $no++.'. '.$s->solusi ?>
 					<br>
 				<?php } ?>
-				</p>
+				
 			</td>
 		</tr> 
 </table>
