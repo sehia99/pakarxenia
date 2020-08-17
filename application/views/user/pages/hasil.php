@@ -57,11 +57,11 @@ background-position: center;
 				echo tgl_indo(date('Y-m-d'));  ?></td>
 		</tr>
 
-		<tr >
+		<!--<tr >
 			<td>Username</td>
 			<td>:</td>
 			<td><?php echo $username ?></td>
-		</tr>
+		</tr> -->
 
 		<tr>
 			<td>Nama Kerusakan</td>
